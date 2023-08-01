@@ -1,9 +1,10 @@
 from selene import browser, have, be
 import os
 
+
 def test_homework():
 
-    browser.open('/automation-practice-form')
+    browser.open_url('/automation-practice-form')
 
     browser.element('[id="firstName"]').send_keys('Ivan')
     browser.element('[id="lastName"]').send_keys('Ivanov')
